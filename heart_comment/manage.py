@@ -6,7 +6,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'heart_comment.settings')
+    profile = os.environ.get('COMMENT_PROFILE','develop')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'heart_comment.settings.%s' % profile)
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

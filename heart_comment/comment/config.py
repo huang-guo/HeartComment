@@ -1,0 +1,19 @@
+STATUS_NORMAL=1
+STATUS_DELETE=0
+STATUS_ITEM=(
+    (STATUS_NORMAL,'正常'),
+    (STATUS_DELETE,'删除'),
+)
+
+SCORE_1='坑爹'
+SCORE_2='鸡肋'
+SCORE_3='正常'
+SCORE_4='优秀'
+SCORE_5='丝滑'
+SCORE_ITEM=(
+    (1,SCORE_1),
+    (2,SCORE_2),
+    (3,SCORE_3),
+    (4,SCORE_4),
+    (5,SCORE_5),
+)
