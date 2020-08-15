@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <div class="header">
+    <nav class="nav-container">
+      <ul class="top-nav">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+      </ul>
+      <div class="information">
+        欢迎光临
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <a href="#" class="home-link"><h1>哈孔网页</h1></a>
+      <form class="search">
+        <input type="search" placeholder="请输入搜索内容"/>
+        <button type="submit">
+          搜索
+        </button>
+      </form>
+    </div>
+  </div>
+  {% block main %}
+  {% endblock %}
+
+  <footer>
+  </footer>
+</body>
+</html>
